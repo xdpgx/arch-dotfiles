@@ -22,7 +22,7 @@
       "on-click": "activate",
       "format": "{name}{icon}",
       "format-icons": {
-         "active": ""
+         "active": "",
          "default": ""
       }
     },

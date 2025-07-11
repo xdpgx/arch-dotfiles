@@ -10,6 +10,7 @@
       "clock"
     ],
     "modules-right": [
+      "tray",
       "bluetooth",
       "network",
       "pulseaudio",
@@ -19,6 +20,7 @@
     ],
     "hyprland/workspaces": {
       "on-click": "activate",
+      "active-only": true,
       "format": "{icon}",
       "format-icons": {
         "default": "",
@@ -33,11 +35,8 @@
         "7": "7",
         "8": "8",
         "9": "9",
+        "10": "10",
         "active": "󱓻"
-      },
-      "persistent-workspaces": {
-        "DP-2": [1,2,3,4,5,6,7,8,9,10],
-        "DP-1": [12,11]
       }
     },
     "cpu": {
@@ -105,5 +104,10 @@
       "format": "󰐥",
       "on-click": "~/.local/share/omarchy/bin/omarchy-power-menu",
       "tooltip": false
+    },
+    "tray": {
+    	"icon-size": 21,
+    	"spacing": 10,
     }
+
 }

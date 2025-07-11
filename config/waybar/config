@@ -23,7 +23,6 @@
       "active-only": true,
       "format": "{icon}",
       "format-icons": {
-        "default": "",
         "12": "12",
         "11": "11",
         "1": "1",
@@ -106,7 +105,7 @@
       "tooltip": false
     },
     "tray": {
-    	"icon-size": 21,
+    	"icon-size": 15,
     	"spacing": 10,
     }
 

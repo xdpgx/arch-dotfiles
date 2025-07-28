@@ -22,8 +22,8 @@
       "on-click": "activate",
       "format": "{name}{icon}",
       "format-icons": {
-         "active": "",
-         "default": ""
+         "active": "",
+         "default": ""
       }
     },
     "cpu": {

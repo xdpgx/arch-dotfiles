@@ -30,7 +30,7 @@
       "on-click": "alacritty -e btop"
     },
     "clock": {
-      "format": "{:%A %H:%M}",
+      "format": "{:%A :%d %H:%M}",
       "tooltip": "true",
       "tooltip-format": "<tt><small>{calendar}</small></tt>",
       "calendar": {
@@ -90,7 +90,7 @@
       "on-click": "GTK_THEME=Adwaita-dark blueberry"
     },
     "pulseaudio": {
-      "format": "{volume}%",
+      "format": "{volume}% ",
       "format-muted": "󰝟",
       "scroll-step": 5,
       "on-click": "GTK_THEME=Adwaita-dark pavucontrol",

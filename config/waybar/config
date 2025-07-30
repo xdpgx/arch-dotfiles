@@ -12,9 +12,7 @@
     "modules-right": [
       "tray",
       "bluetooth",
-      "network",
       "pulseaudio",
-      "cpu",
       "battery",
       "custom/power-menu"
     ],
@@ -33,8 +31,21 @@
     },
     "clock": {
       "format": "{:%A %H:%M}",
-      "format-alt": "{:%d %B W%V %Y}",
-      "tooltip": false
+      "tooltip": "true",
+      "tooltip-format": "<tt><small>{calendar}</small></tt>",
+      "calendar": {
+		    "mode"          : "year",
+		    "mode-mon-col"  : 3,
+		    "on-scroll"     : 1,
+		    "on-click-right": "mode",
+		    "format": {
+		    	"months":     "<span color='#ffead3'><b>{}</b></span>",
+		    	"days":       "<span color='#ecc6d9'><b>{}</b></span>",
+		    	"weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+		    	"weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+		    	"today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+		    }
+      }
     },
     "network": {
       "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
@@ -79,11 +90,10 @@
       "on-click": "GTK_THEME=Adwaita-dark blueberry"
     },
     "pulseaudio": {
-      "format": "",
+      "format": "{volume}%",
       "format-muted": "󰝟",
       "scroll-step": 5,
       "on-click": "GTK_THEME=Adwaita-dark pavucontrol",
-      "tooltip-format": "Playing at {volume}%",
       "on-click-right": "pamixer -t",
       "ignored-sinks": ["Easy Effects Sink"]
     },

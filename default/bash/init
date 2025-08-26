@@ -15,4 +15,4 @@ if command -v fzf &> /dev/null; then
   fi
 fi
 
-eval `keychain --eval --agents ssh id_ed25519`
+eval `keychain --eval  id_ed25519`

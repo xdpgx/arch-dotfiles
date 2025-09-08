@@ -1,6 +1,5 @@
 yay -S --noconfirm --needed \
-  telegram-desktop spotify \
-  libreoffice obs-studio \
+  signal-desktop deezer libreoffice obs-studio \
   pinta xournalpp \
   globalprotect-openconnect-git vesktop
 
